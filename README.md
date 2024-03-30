@@ -1,4 +1,4 @@
-# Android device tree for Infinix Infinix X697 (Infinix-X697)
+# Android device tree for Infinix X697 (Infinix-X697)
 
 ```
 #
