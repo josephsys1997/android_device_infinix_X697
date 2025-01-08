@@ -12,13 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from Infinix-X697 device
+# Inherit from X697 device
 $(call inherit-product, device/infinix/X697/device.mk)
 
 PRODUCT_DEVICE := X697
 PRODUCT_NAME := twrp_X697
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := X697
+PRODUCT_MODEL := Infinix Note 11 Pro
 PRODUCT_MANUFACTURER := infinix
 
 PRODUCT_GMS_CLIENTID_BASE := android-infinix
