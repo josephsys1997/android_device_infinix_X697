@@ -2,9 +2,9 @@
 
 ```
 #
-# Copyright (C) 2024 The Android Open Source Project
-# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
+# Copyright (C) 2024 https://github.com/josephsys1997
 #
-# SPDX-License-Identifier: Apache-2.0
+# SPDX-License-Identifier: I trust you bro!
 #
 ```
+I gave my 10 months (or 11) for this very project, and it's starting to pisss me off. You are free to use or fork this pissing project as you wish.
