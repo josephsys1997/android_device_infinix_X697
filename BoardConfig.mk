@@ -9,8 +9,6 @@ TARGET_OUT_SHARED_LIBRARIES := $(DEVICE_PATH)/recovery/root/vendor/lib64
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
-BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -58,7 +56,6 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_KERNEL_IMAGE_NAME := kernel
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_KERNEL_CONFIG := X697_defconfig
 TARGET_KERNEL_SOURCE := kernel/infinix/X697
 
@@ -95,15 +92,6 @@ PRODUCT_PLATFORM := mt6781
 # User images
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-
-# System as root
-BOARD_SUPPRESS_SECURE_ERASE := true
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
-
-# Workaround for copying error vendor files to recovery ramdisk
-TARGET_COPY_OUT_PRODUCT := product
-TARGET_COPY_OUT_VENDOR := vendor
-TARGET_COPY_OUT_SYSTEM_EXT = system_ext
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
